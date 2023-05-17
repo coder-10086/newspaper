@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Button } from 'antd'
+import Login from './Login'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +25,7 @@ export default function Home() {
             priority
           />
         </div>
-        <Button type="primary">ant button</Button>
+        <Login/>
       </main>
     </>
   )

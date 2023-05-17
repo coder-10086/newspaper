@@ -1,0 +1,105 @@
+.input_style {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  opacity: 0.5; /* 调整透明度 */
+}
+
+.checkbox_box {
+  width: 20rem;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.submit_style {
+  width: 20rem;
+  height: 3rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6; /* 调整透明度;*/
+}
+
+.create_button_style {
+  padding: 0;
+  color: white;
+}
+
+.create_button_style:hover {
+  color: #1677ff;
+}
+
+.glass_container {
+  position: relative;
+  width: 25rem;
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url('../public/diana-shchurova-z9vKvuJjBsU-unsplash.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+}
+
+.position_up {
+  animation: imageMoveUp 3s ease alternate;
+  animation-fill-mode: forwards
+}
+
+.position_down {
+  animation: imageMoveDown 3s ease alternate;
+  animation-fill-mode: forwards;
+}
+
+.glass_container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px); /* 调整模糊程度 */
+  opacity: 0.8; /* 调整透明度 */
+}
+
+.form_login {
+  transition: transform 0.8s ease;
+  transform: translateY(-18rem)
+}
+
+.form_register {
+  transition: transform 0.8s ease;
+  transform: translateY(-31rem)
+}
+
+.register_active {
+  transform: translateY(3rem)
+}
+
+.login_active {
+  transform: translateY(18rem);
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes imageMoveUp {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes imageMoveDown {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}

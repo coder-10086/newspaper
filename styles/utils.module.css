@@ -1,0 +1,35 @@
+.flex_center_horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.flex_center_vertical {
+  display: flex;
+  align-items: center;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_space_between_horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_space_around_horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.color_white {
+  color: white;
+}
+
+.color_blue {
+  color: #69b1ff;;
+}
